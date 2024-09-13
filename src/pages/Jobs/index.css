@@ -1,0 +1,120 @@
+.jobs-bg-container{
+    background-color: #121212;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.jobs-responsive-container{
+    width: 90%;
+    padding: 30px 0px 90px;
+}
+@media screen and (min-width:768px) {
+    .jobs-responsive-container{
+        padding-top: 50px;
+    } 
+}
+
+.loader-container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-list-container{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.jobs-failure-container{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jobs-failure-container> img {
+    width: 100%;
+}
+@media screen and (min-width:768px) {
+    .jobs-failure-container> img {
+        width: 400px;
+    }
+}
+
+.jobs-failure-container> p{
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 30px 0;
+}
+@media screen and (min-width:768px) {
+    .jobs-failure-container> p {
+        font-size: 2rem;
+    }
+}
+
+.jobs-failure-container> button{
+    color: #fff;
+    background-color: #4f46e5;
+    font-family: "Roboto",sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 12px 16px;
+    border: none;
+    outline: none;
+    cursor: pointer; 
+}
+.jobs-failure-container> button:hover{
+    box-shadow: 0px 0px 16px #4f46e5;
+    transition: 0.25s ease-in-out;
+}
+@media screen and (min-width:768px){
+    .jobs-failure-container> button{
+        padding: 16px 24px;
+    }
+}
+
+.pagination-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.next-and-prev-btn{
+    color: #fff;
+    background-color: #4f46e5;
+    font-family: "Roboto",sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    height: 35px;
+    width: 75px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.next-and-prev-btn:hover{
+    opacity: 0.9;
+    box-shadow: 0px 0px 16px #4f46e5;
+}
+
+.pagination-container > p{
+    margin:0 8px;
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+    font-size: 0.8rem;
+}
+
+.pagination-container > p >span{
+    color: #4f46e5;
+    font-family: "Roboto",sans-serif;
+    font-weight: 600;
+    padding: 5px;
+}

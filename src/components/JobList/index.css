@@ -1,0 +1,88 @@
+.job-list-item-container{
+    background-color: #202020;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.job-item-role-and-postedon{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #7e858e;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.job-item-role-and-postedon > div{
+    width: 50%;
+}
+
+.job-list-item-job-role{
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+@media screen and (min-width:768px) {
+    .job-list-item-job-role{
+        font-size: 2rem;
+    }
+}
+
+.job-list-item-company-name{
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+    font-size: 0.8rem;
+}
+@media screen and (min-width:768px) {
+    .job-list-item-company-name{
+        font-size: 1rem;
+    }
+}
+
+.job-list-item-posted-on{
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+    font-size: 0.8rem;
+}
+
+.job-item-location-and-jobhours{
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (min-width:768px) {
+    .job-item-location-and-jobhours{
+        font-size: 1rem;
+    }
+}
+
+.job-item-location-salary-contact > p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.job-item-location-salary-contact > p > span{
+    margin-left: 8px;
+}
+
+.remove-bookmark-btn-container{    
+    position: absolute;
+    top: -8px;
+    right: -10px;
+}
+
+.remove-bookmark-btn-container button{
+    color: #ff0000;
+    background-color: transparent;
+    font-size: 20px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
