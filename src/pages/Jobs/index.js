@@ -52,7 +52,9 @@ export default function Jobs() {
       const jobsListApiResponse = await fetch(jobListApiUrl);
       if (jobsListApiResponse.ok) {
         const fetchedJobListData = await jobsListApiResponse.json();
+
         const formattedJobListData = fetchedJobListData.results
+          // eslint-disable-next-line
           .map((eachJob) => {
             if (eachJob.id !== undefined) {
               return getFormattedJobsListData(eachJob);
@@ -72,6 +74,7 @@ export default function Jobs() {
   // Fetch job list data when the component mounts or currentPage changes
   useEffect(() => {
     getjobListData(currentPage);
+    // eslint-disable-next-line
   }, [currentPage]);
 
   // Retry fetching job list data on failure
